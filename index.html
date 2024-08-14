@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Serralheria</title>
+    <link rel="stylesheet" href="./estilo/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Agende seu horário</h1>
+            <p>Os melhores serviços de soldagem que você pode encontrar!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="formulario">
+                <label for="service-type">Trabalho desejado</label>
+                <select name="service-type" id="service-type">
+                    <option value="">Selecione</option>
+                    <option value="portao">Portão de Ferro</option>                
+                    <option value="grade-esquadrias">Grade e Esquadrias</option>
+                    <option value="estruturas">Estruturas Metálicas</option>
+                    <option value="mobiliario">Mobiliário Metálico</option>
+                    <option value="persona">Soldagem personalizada</option>
+                </select>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="whatsapp">Whatsapp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Data desejada:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Horário desejado:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="inform-extra">Informações Adicionais:</label>
+                <textarea name="inform-extra" id="inform-extra" rows="4"></textarea>
+                
+                <button type="submit">Agendar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Intersolda. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
